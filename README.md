@@ -5,7 +5,7 @@
 
 ---
 
-## What I Built
+## :wrench: What I Built
 
 A cocurrent, config-driven fleet installer that deploys and manages software stacks across 20+ bare-metal GPU servers via SSH — from a single Windows workstation.
 
@@ -18,7 +18,7 @@ A cocurrent, config-driven fleet installer that deploys and manages software sta
 
 ---
 
-## The Problem
+## :anger: The Problem
 
 - 25+ GPU servers needed identical software stacks (runtime, drivers, firmware, diagnostic tools)
 - BKC (Best Known Configuration) versions changed every 1-2 weeks
@@ -27,7 +27,7 @@ A cocurrent, config-driven fleet installer that deploys and manages software sta
 
 ---
 
-## Installation Dependencies
+## :open_file_folder: Installation Dependencies
 
 Compenents must be installed in order - later stages depend on earlier ones.
 
@@ -41,7 +41,7 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ---
 
-## What I Did
+## :thought_balloon: What I Did
 
 | Area | Detail |
 |---|---|
@@ -55,7 +55,7 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ---
 
-## Architecture
+## :house_with_garden: Architecture
 
 ```text
 ┌───────────┐    ┌────────────────┐    ┌─────────────────┐
@@ -80,7 +80,7 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ---
 
-## Project Structure
+## :evergreen_tree: Project Structure
 
 ```text
 project/
@@ -101,7 +101,7 @@ project/
 
 ---
 
-## Outcomes
+## :computer: Outcomes
 
 | Metric | Before | After |
 |---|---|---|
