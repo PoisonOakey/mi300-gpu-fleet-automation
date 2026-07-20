@@ -7,7 +7,7 @@
 
 ## What I Built
 
-A config-driven fleet installer that deploys and manages software stacks across 25+ bare-metal GPU servers via SSH — from a single Windows workstation.
+A cocurrent, config-driven fleet installer that deploys and manages software stacks across 25+ bare-metal GPU servers via SSH — from a single Windows workstation.
 
 **One command** deploys the full stack (GPU runtime, kernel drivers, diagnostics, benchmarks) to the entire fleet with automatic reboot handling.
 
