@@ -78,7 +78,7 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ---
 
-### Project Structure
+## Project Structure
 
 ```text
 project/
