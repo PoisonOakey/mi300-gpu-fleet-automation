@@ -31,7 +31,7 @@ A cocurrent, config-driven fleet installer that deploys and manages software sta
 
 Compenents must be installed in order - later stages depend on earlier ones.
 
-<img width="381" height="485" alt="Untitled Diagram drawio (3)" src="https://github.com/user-attachments/assets/8f7a1d2e-3031-4114-9228-a7f629fa6f93" />
+<img width="507" height="647" alt="lovestory drawio" src="https://github.com/user-attachments/assets/6935e923-a0a0-42b4-9a22-f5db2b8a2e99" />
 
 <br>
 <br>
