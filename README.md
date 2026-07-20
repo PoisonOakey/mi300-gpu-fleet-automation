@@ -12,7 +12,9 @@ A cocurrent, config-driven fleet installer that deploys and manages software sta
 **One command** deploys the full stack (GPU runtime, kernel drivers, diagnostics, benchmarks) to the entire fleet with automatic reboot handling.
 
 >  [!IMPORTANT]
->  **Why custom, not Ansible?** Bare-metal hosts, no agents, no cloud APIs — SSH was the only access. Purpose-built for fast version rotations where the team needed a single command, not a playbook.
+>  _**Why custom, not Ansible?**_
+>
+> Bare-metal hosts, no agents, no cloud APIs — SSH was the only access. Purpose-built for fast version rotations where the team needed a single command, not a playbook.
 
 ---
 
