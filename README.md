@@ -1,6 +1,6 @@
 # AMD Instinct™ MI300 Series DCGPU Fleet Provisioning Automation
 
-> A case study on the highly concurrent, config-driven fleet installer I built for managing drivers and runtimes across 25+ enterprise bare-metal AMD Instinct™ MI300 series DCGPU servers.
+> A case study on the highly concurrent, config-driven fleet installer I built for managing drivers and runtimes across 25+ enterprise bare-metal AMD Instinct™ MI300 series Data Center GPU servers.
 > **No proprietary code is included.** This documents the architecture, skills, and outcomes.
 
 ---
