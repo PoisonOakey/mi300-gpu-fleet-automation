@@ -42,17 +42,14 @@ Compenents must be installed in order - later stages depend on earlier ones.
 
 ---
 
-## :thought_balloon: What I Did
+## :thought_balloon: Key Engineering Decisions
 
 | Area | Detail |
 |---|---|
-| **Language** | Python 3 |
-| **Remote execution** | Paramiko (SSH) — no agents on target hosts |
-| **Config management** | YAML config for all versions, URLs, and host inventory |
-| **Parallelism** | ThreadPoolExecutor — up to 12 hosts simultaneously |
-| **Reboot orchestration** | SSH polling loop with backoff for driver installs requiring kernel reloads |
-| **Logging** | Per-host log files with dual output (console + file) |
-| **Deployment model** | Push-based — script runs from operator's machine, pushes installs outward |
+| **Agentless Execution** | Python `Paramiko` over SSH with `ThreadPoolExecutor` for 12x parallel push deployments |
+| **Config-Driven** | Strict YAML separation for versions and inventory—code remains untouched during weekly BKC rotations |
+| **Idempotency & Auditing** | Pre-flight version checks skip matching components (saves 15m/host); generates Expected vs. Actual compliance reports |
+| **Fault-Tolerant Orchestration** | Custom SSH polling backoff for kernel reboots + strict 7-stage dependency chain enforcement |
 
 ---
 
@@ -111,6 +108,7 @@ project/
 
 ## :computer: Outcomes
 
+
 | Metric | Before | After |
 |---|---|---|
 | Time to deploy full stack per host | 1-2 hours (manual) | ~15 min (automated) |
@@ -120,11 +118,9 @@ project/
 | Documentation | None | Architecture guide, workflow guide, changelog |
 
 > [!NOTE]
-> ### Additional features implemented:
-> - **Idempotent installs** — checks current version on each host before installing, skips if already at target (`--force` to override)
-> - **BKC Gatekeeper** — side-by-side Expected vs Actual version comparison table for fleet compliance auditing
-> - **Improved logging** — ✅/❌ pass/fail markers per step with summary block at end of each host run
->
-> _**Still planned**_: dry-run mode, retry logic for transient failures, full suite idempotency.
+> ### 🔮 Future Roadmap
+> - **Dry-run mode** — simulate deployments before applying changes
+> - **Retry logic** — auto-recover from transient network failures
+> - **Full suite idempotency** — skip any component that is already up-to-date
 
 ---
