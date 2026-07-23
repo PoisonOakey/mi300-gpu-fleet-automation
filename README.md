@@ -103,7 +103,6 @@ project/
 ├── requirements.txt       # Python dependencies (paramiko, pyyaml)
 └── README.md
 ```
-
 ---
 
 ## :computer: Outcomes
