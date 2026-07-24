@@ -119,7 +119,7 @@ graph LR
 | Fleet-wide BKC update | Full day+ | Single command, walk away |
 | Version drift across fleet | Common | Eliminated (config-driven) |
 | Version update process | Edit Python code | Edit YAML config |
-| Documentation | None | Architecture guide, workflow guide, changelog |
+| Documentation | None | Architecture guide, workflow guide, log |
 
 > [!NOTE]
 > ### 🔮 Future Roadmap
