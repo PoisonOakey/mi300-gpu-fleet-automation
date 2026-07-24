@@ -88,20 +88,25 @@ graph LR
 ## :evergreen_tree: Project Structure
 
 ```text
-project/
-├── fleet.py               # Single-file installer (all logic here)
-├── config/
-│   ├── versions.yml       # Tool versions, URLs, build numbers
-│   └── hosts.yml          # Target host inventory + credentials
-├── docs/
-│   ├── Architecture.md    # How the tool works (layers, flow, decisions)
-│   ├── Workflow_Guide.md  # Install order, dependencies, gotchas
-│   ├── Future_Plan.md     # Planned improvements
-│   └── Changelog.md       # Version history per release
-├── archive/               # Previous script versions (reference)
-├── logs/                  # Per-host logs (generated at runtime)
-├── requirements.txt       # Python dependencies (paramiko, pyyaml)
-└── README.md
+📁 project/
+│
+├── 📄 fleet.py               # Single-file installer (all logic here)
+├── 📄 requirements.txt       # Python dependencies (paramiko, pyyaml)
+├── 📄 README.md              # Project documentation
+│
+├── 📁 config/
+│   ├── 📄 versions.yml       # Tool versions, URLs, build numbers
+│   └── 📄 hosts.yml          # Target host inventory + credentials
+│
+├── 📁 docs/
+│   ├── 📄 Architecture.md    # How the tool works (layers, flow, decisions)
+│   ├── 📄 Workflow_Guide.md  # Install order, dependencies, gotchas
+│   ├── 📄 Future_Plan.md     # Planned improvements
+│   └── 📄 Changelog.md       # Version history per release
+│
+├── 📁 archive/               # Previous script versions (reference)
+└── 📁 logs/                  # Per-host logs (generated at runtime)
+
 ```
 ---
 
